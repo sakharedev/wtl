@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Shop</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-left: 100px;
+
+        }
+        img {
+            width: 250px;
+        }
+        .main-images {
+            width: 250px;
+            padding: 20px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .images-flex {
+            display: flex;
+            justify-content: center;
+        }
+        .inside-images {
+            padding: 40px;
+        }
+
+        .animation {
+            position: relative;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        .animation-image {
+            margin: 0 auto;
+            display: block;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Florist Shop</h1>
+    <h2>Floral Shop</h2>
+    <div class="images-container">
+        <div>
+            <img class="main-images" src="images/pexels-jonaskakaroto-736230.jpg" alt="">
+        </div>
+        <div>
+            <img class="main-images" src="images/images.jpeg" alt="">
+        </div>
+        <div>
+            <img class="main-images" src="images/360_F_577877489_oQBPZV8680CWLSWDbBkfs6hC7dUgAQrR.jpg" alt="">
+        </div>
+    </div>
+    <h2>Rose Images</h2>
+    <div class="images-flex">
+        <div>
+            <img class="inside-images" src="images/roa1.jpg" alt="">
+        </div>
+        <div>
+            <img class="inside-images" src="images/rose2.jpeg" alt="">
+        </div>
+        <div>
+            <img class="inside-images" src="images/rose3.jpeg" alt="">
+        </div>
+    </div>
+
+    <h2>Tulip Images</h2>
+    <div class="images-flex">
+        <div>
+            <img src="images/tulip.jpeg" alt="" class="inside-images">
+        </div>
+        <div>
+            <img src="images/tulip3.jpg" alt="" class="inside-images">
+        </div>
+        <div>
+            <img src="images/tulip2.jpeg" alt="" class="inside-images">
+        </div>
+    </div>
+
+    <div class="animation">
+        <img class="animation-image" src="images/animation.jpg" alt="">
+    </div>
+</body>
+</html>

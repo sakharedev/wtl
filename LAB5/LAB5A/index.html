@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Row to Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paras Sakhare</td>
+                <td>paras@example.com</td>
+            </tr>
+            <tr>
+                <td>Harshil Panchal</td>
+                <td>harshil@example.com</td>
+            </tr>
+            <tr>
+                <td>Yash Gaikwad</td>
+                <td>yash@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="addRowBtn">Add Row</button>
+
+
+    <script>
+        // Function to handle button click event
+        function addRow() {
+            const names = ["Yashvi", "Meet", "Yash", "Abhishek", "Pratham", "Vaibhavi"];
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(table.rows.length); // Insert new row at the end of the table
+
+
+            var cell1 = row.insertCell(0); // Insert new cells
+            var cell2 = row.insertCell(1);
+
+
+            // cell1.innerHTML = "New Name"; // Add content to the cells
+            // cell2.innerHTML = "new@example.com";
+            // get random names for the new row from the names array
+            var randomIndex = Math.floor(Math.random() * names.length);
+            console.log(randomIndex);
+            cell1.innerHTML = names[randomIndex];
+            cell2.innerHTML = names[randomIndex].toLowerCase() + "@example.com";
+
+        }
+
+
+        // Attach event listener to the button
+        var addRowBtn = document.getElementById("addRowBtn");
+        addRowBtn.addEventListener("click", addRow);
+    </script>
+</body>
+</html>
+
+
+

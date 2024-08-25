@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Anchor Tag</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Anchor Tag Example</h1>
+        <button id="addAnchorBtn">Add Anchor Tag</button>
+    </div>
+
+
+    <script>
+        // Function to handle button click event
+        function addAnchorTag() {
+            var container = document.getElementById("container");
+            
+            var anchor = document.createElement("a"); // Create the anchor element
+            anchor.href = "https://www.example.com"; // Set the URL to redirect to
+            anchor.textContent = " Click me! "; // Set the text content of the anchor
+            anchor.target = "_blank"; // Open in a new tab
+            
+            var anchor1 = document.createElement("a");
+            anchor1.href = "https://www.google.com";
+            anchor1.textContent = " Google it! ";
+            anchor1.target = "_blank"; // Open in a new tab
+
+            container.appendChild(anchor); // Append the anchor to the container
+            container.appendChild(anchor1);
+        }
+
+
+        // Attach event listener to the button
+        var addAnchorBtn = document.getElementById("addAnchorBtn");
+        addAnchorBtn.addEventListener("click", addAnchorTag);
+    </script>
+</body>
+</html>

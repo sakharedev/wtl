@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button Color</title>
+    <style>
+        #myButton {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+
+
+    <script>
+        var button = document.getElementById("myButton");
+
+
+        // Onmouseover event
+        button.addEventListener("mouseover", function() {
+            button.style.backgroundColor = "#e67e22";
+        });
+
+
+        // Onmouseout event
+        button.addEventListener("mouseout", function() {
+            button.style.backgroundColor = "#3498db";
+        });
+
+
+        // Onclick event
+        button.addEventListener("click", function() {
+            button.style.backgroundColor = "#2ecc71";
+        });
+    </script>
+</body>
+</html>
+
+
+
