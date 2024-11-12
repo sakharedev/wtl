@@ -1,0 +1,19 @@
+.new-element { 
+    padding: 10px; 
+    margin: 10px; 
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    width: 100%; 
+    max-width: 600px; 
+   } 
+   @media only screen and (min-width: 768px) {  .new-element { 
+    width: calc(50% - 20px); 
+    } 
+   } 
+   @media only screen and (min-width: 992px) {  .new-element { 
+    width: calc(33.33% - 20px); 
+    } 
+   } 
+   
